@@ -1,0 +1,21 @@
+.rating-stars {
+  margin-right: 5px;
+}
+.rating-star {
+  display: inline-block;
+  margin-right: 1px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  background-size: 10px 10px;
+}
+.star-full {
+  background-image: url('../../images/star-full.png');
+}
+.star-half {
+  background-image: url('../../images/star-half.png');
+}
+.star-gray {
+  background-image: url('../../images/star-gray.png');
+}

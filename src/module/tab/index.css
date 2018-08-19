@@ -1,0 +1,14 @@
+.tab {
+  position: fixed;
+  bottom: 0;
+  height: constant(safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+  height: env(safe-area-inset-bottom); /* 兼容 iOS >= 11.2 */
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-top: 1px solid #ddd;
+}
+.tab-wrap {
+  display: flex;
+  justify-content: space-between;
+}

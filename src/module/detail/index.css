@@ -1,0 +1,82 @@
+.back {
+  box-sizing: border-box;
+  color: #fff;
+  padding: 0.5em;
+  background-color: #42bd56;
+  text-align: center;
+  position: relative;
+  height: constant(safe-area-inset-top); /* 兼容 iOS < 11.2 */
+  height: env(safe-area-inset-top); /* 兼容 iOS >= 11.2 */
+}
+.back span {
+  line-height: 1.5;
+}
+a.back-btn {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  line-height: 2;
+  left: 0;
+  height: 100%;
+  width: 3em;
+}
+.back-btn::before {
+  content: '< ';
+  color: #fff;
+}
+.intro {
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #494949;
+}
+.intro h1 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+.intro .rating-text {
+  font-size: 12px;
+  margin-bottom: 0.5em;
+}
+.intro .num-raters {
+  padding-left: 0.5em;
+  color: #999;
+}
+.intro .meta span {
+  font-size: 14px;
+  padding-right: 0.5em;
+}
+.intro .meta span::after {
+  content: '/';
+  padding-left: 0.5em;
+}
+.intro .tag-name span {
+  background-color: #42bd56;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 0.5em;
+  padding: 0;
+}
+.intro .cover {
+  width: 100px;
+  margin: 0 1em 1em 1em;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.info {
+  margin: 1em;
+}
+.info h2 {
+  color: #aaa;
+  margin-bottom: 1em;
+  font-size: 15px;
+  font-weight: 400;
+}
+.info p {
+  color: #494949;
+  line-height: 1.5;
+  font-size: 15px;
+}
