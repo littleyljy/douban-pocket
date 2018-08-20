@@ -4,7 +4,7 @@ import App from './app'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/demo/doubanpocket'>
     <App />
   </BrowserRouter>,
   document.getElementById('root')

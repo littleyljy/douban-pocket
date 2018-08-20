@@ -7,8 +7,6 @@
   width: 100%;
   top: 0;
   z-index: 9999;
-  height: constant(safe-area-inset-top); /* 兼容 iOS < 11.2 */
-  height: env(safe-area-inset-top); /* 兼容 iOS >= 11.2 */
 }
 
 .search-text {

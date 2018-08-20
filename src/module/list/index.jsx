@@ -56,7 +56,9 @@ class List extends Component {
     setTimeout(() => {
       // 刷新清空 apiArr，防止下拉加载留存数据干扰
       this.setState({
-        apiArr: []
+        apiArr: [],
+        index: 20,
+        start: 20
       })
     }, 0)
     console.log('打印nextProps', nextProps)
@@ -126,8 +128,8 @@ class List extends Component {
         })
       } else {
         console.log('handLoadMore this.state.api', this.state.api)
-        // movie api 翻页与 book/music api 有区别，movie 用 ?，book/music 用 &
-        let mark = this.state.keyword === 'movie' ? '?' : '&'
+        // movie/top250 api 翻页与 book/music api 有区别，movie/top250 用 ?，book/music 及搜索列表全用 &
+        let mark = ((this.state.keyword === 'movie') && (this.state.api.indexOf('search') === -1)) ? '?' : '&'
         this.fetchData(`${this.props.api}${mark}start=${this.state.start}`)
         this.setState({
           action: STATS.reset,

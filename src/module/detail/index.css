@@ -5,8 +5,6 @@
   background-color: #42bd56;
   text-align: center;
   position: relative;
-  height: constant(safe-area-inset-top); /* 兼容 iOS < 11.2 */
-  height: env(safe-area-inset-top); /* 兼容 iOS >= 11.2 */
 }
 .back span {
   line-height: 1.5;
